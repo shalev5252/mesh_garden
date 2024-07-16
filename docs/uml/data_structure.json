@@ -1,0 +1,88 @@
+@startjson
+
+{   
+    "Measurements": 
+    {      
+        "nodeId":
+        {
+        "sensor id":{  
+        "sensor Type":{  
+        "units": "%",
+        "newSample":{
+            "measure value": "value",
+            "measure time": "time"
+        }   ,    
+        "samples": [
+        {
+            "measure value": "value",
+            "measure time": "time"
+        },
+        {
+            "measure value": "value",
+            "measure time": "time"
+        }
+        ]
+        }
+        }
+        }
+    },
+    "Nodes":
+    {    
+        "nodeId":
+        {
+            "nickname": "nick",
+            "active" : "true",  
+            "bridge" : "false",
+            "battery":"50",
+            "sensors" : [
+                {
+                    "hardware info": "Grove Soil Moisture Sensor v1",
+                    "sensor_id": "1",
+                    "measurement type": "Humidity",
+                    "sensor_time_interval": "40",
+                    "sensor units": "%",
+                    "pinout": {
+                        "AOUT": "A0",
+                        "VCC": "D4"
+                    },
+                    "sensor type":["Soil Moisture"]
+                }
+                ] 
+        }
+    },
+    "Mesh Network": { 
+        "active":{
+        "node1": "null",
+        "nodeId2": "null",
+        "nodeId3": "null"
+        }
+    },
+    "Nodes changes": {
+            "nodeId": "change string",
+            "nodeId2": "change string"
+    },
+    "Network" : {
+        "firebase":{
+            "api_key": "",
+            "firebase_project_id": "",
+            "user_email": "",
+            "user_password": ""
+            },
+        "mesh":{
+            "mesh_password":"",
+            "mesh port":"",
+            "mesh_prefix": ""
+        },
+        "time":{
+            "daylight_offset_sec": 7200,
+            "gmt_offset_sec" :3600,
+            "ntp_server":"pool.ntp.org"
+        },
+        "wifi":{
+            "ssid":"",
+            "password":""
+        }
+    }
+}
+
+@endjson
